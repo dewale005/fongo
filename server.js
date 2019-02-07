@@ -1,15 +1,17 @@
-const express=require('express');
-const app=expres();
-const path=require('path');
+const express = require('express');
+const http = require('http')
+const path = require('path');
 
-app.us(express.static(__dirname+'/dist/fongo'));
+const app = express();
 
-app.listen(process.env.PORT||8080);
+app.use(express.static(path.join(__dirname, 'dist')));
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
 
-//PathLocationStradegy
-app.get('/', function(req,res) {
-    res.sendFile(path.join(__dirname+'/dist/fongo/index.html'));
-  });
+const port = process.env.PORT || 3000;
+app.set('port', port);
 
-console.log('Console Listening'); 
+const server = http.createServer(app);
+server.listen(port, () => console.log('running'));
