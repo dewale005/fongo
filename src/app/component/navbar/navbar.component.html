@@ -1,0 +1,92 @@
+<mat-toolbar style="background: transparent; height: 48px;" class="hidden">
+  <span class="example-spacer"></span>
+  <button mat-button>
+    <mat-icon aria-label="Menu">near_me</mat-icon>
+    TRACK YOUR ORDER
+  </button>
+  <button mat-button>
+    <mat-icon aria-label="Menu">contact_phone</mat-icon>
+    NEED HELP?
+  </button>
+  <button mat-button>
+    <mat-icon aria-label="Menu">shopping_cart</mat-icon>
+    CART
+  </button>
+</mat-toolbar>
+<mat-toolbar>
+  <mat-toolbar-row class="navbar navbar-expand-lg navbar-light ">
+    <span class="navbar-brand">
+      <img src="../../../assets/logo.png" alt="" class="logo" />
+    </span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      mat-icon-button
+    >
+      <mat-icon aria-label="Menu">menu</mat-icon>
+    </button>
+    <div class="collapse navbar-collapse mode" id="navbarNav">
+      <div class="input-group hidden">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="type you search here ....."
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append">
+          <button class="input-group-text" id="basic-addon2" mat-flat-button>
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="navbar-nav">
+        <button mat-button [matMenuTriggerFor]="menu" class="nav-item">
+          <b>SELL</b>
+          <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+          <button mat-menu-item>Item 3</button>
+          <button mat-menu-item>Item 4</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="menu1" class="nav-item">
+          <b>BUY</b>
+          <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+        <mat-menu #menu1="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+          <button mat-menu-item>Item 3</button>
+          <button mat-menu-item>Item 4</button>
+        </mat-menu>
+
+        <button mat-button class="nav-item">
+          <b>REPAIR</b>
+        </button>
+
+        <button mat-button class="nav-item">
+          <b>GET THE APP</b>
+        </button>
+
+        <button mat-flat-button class="button nav-item">
+          <b>LOGIN</b>
+        </button>
+
+        <b class="nav-item">or</b>
+
+        <button mat-flat-button class="button nav-item">
+          <b>REGISTER</b>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

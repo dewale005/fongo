@@ -6,11 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './materials';
 import { ComingsoonComponent } from './components/comingsoon/comingsoon.component';
+import { LandingPageComponent } from './page/landing-page/landing-page.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComingsoonComponent
+    ComingsoonComponent,
+    LandingPageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
