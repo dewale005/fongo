@@ -8,13 +8,15 @@ import { MaterialModule } from './materials';
 import { ComingsoonComponent } from './components/comingsoon/comingsoon.component';
 import { LandingPageComponent } from './page/landing-page/landing-page.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComingsoonComponent,
     LandingPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
