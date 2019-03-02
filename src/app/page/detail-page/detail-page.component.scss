@@ -3,7 +3,7 @@ section {
 }
 
 .title {
-  width: 73%;
+  width: 100%;
   font-family: Open Sans;
   font-size: 19px;
   font-weight: bold;
@@ -111,6 +111,12 @@ section {
   font-size: 14px;
   font-weight: 600;
   margin-left: 5px;
+}
+
+@media (max-width: 599px) {
+  .add {
+    display: none;
+  }
 }
 
 .carousel-inner {
