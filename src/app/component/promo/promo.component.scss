@@ -1,0 +1,26 @@
+.action {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.but {
+  width: 162px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  border-radius: 72px !important;
+  width: 162px;
+}
+
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  background-color: #0191ca !important;
+}

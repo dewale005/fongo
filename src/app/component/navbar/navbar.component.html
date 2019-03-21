@@ -1,16 +1,25 @@
-<mat-toolbar style="background: transparent; height: 48px;" class="hidden">
+<mat-toolbar
+  style="background: transparent; height: 48px; border-bottom: 1px solid #cccccc; margin-bottom: 22px;"
+  class="hidden contain"
+>
+  <button mat-button>
+    <mat-icon aria-label="Menu" class="icon fongo">phone</mat-icon>
+    (0) -2347895788
+  </button>
+  <button mat-button>
+    <mat-icon aria-label="Menu" class="icon fongo">email</mat-icon>
+    hell@fongo.com
+  </button>
   <span class="example-spacer"></span>
   <button mat-button>
-    <mat-icon aria-label="Menu">near_me</mat-icon>
-    TRACK YOUR ORDER
+    <mat-icon aria-label="Menu" class="icon"> local_shipping </mat-icon>
+    Track Your Order
   </button>
   <button mat-button>
-    <mat-icon aria-label="Menu">contact_phone</mat-icon>
-    NEED HELP?
+    Naira (NGN)
   </button>
   <button mat-button>
-    <mat-icon aria-label="Menu">shopping_cart</mat-icon>
-    CART
+    Register or Sign in
   </button>
 </mat-toolbar>
 <mat-toolbar>
@@ -47,46 +56,65 @@
       </div>
 
       <div class="navbar-nav">
-        <button mat-button [matMenuTriggerFor]="menu" class="nav-item">
-          <b>SELL</b>
-          <i class="material-icons">keyboard_arrow_down</i>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>Item 1</button>
-          <button mat-menu-item>Item 2</button>
-          <button mat-menu-item>Item 3</button>
-          <button mat-menu-item>Item 4</button>
-        </mat-menu>
-
-        <button mat-button [matMenuTriggerFor]="menu1" class="nav-item">
-          <b>BUY</b>
-          <i class="material-icons">keyboard_arrow_down</i>
-        </button>
-        <mat-menu #menu1="matMenu">
-          <button mat-menu-item>Item 1</button>
-          <button mat-menu-item>Item 2</button>
-          <button mat-menu-item>Item 3</button>
-          <button mat-menu-item>Item 4</button>
-        </mat-menu>
-
-        <button mat-button class="nav-item">
-          <b>REPAIR</b>
+        <b class="nav-item"></b>
+        <b class="nav-item"></b>
+        <button mat-icon-button class="nav-item">
+          <mat-icon aria-label="Menu">favorite_border</mat-icon>
         </button>
 
-        <button mat-button class="nav-item">
-          <b>GET THE APP</b>
+        <button mat-icon-button class="nav-item">
+          <mat-icon
+            matBadge="22"
+            matBadgePosition="below after"
+            aria-label="Menu"
+            >shopping_cart</mat-icon
+          >
         </button>
+        <b class="nav-item"></b>
+        <button mat-flat-button class="button nav-item">
+          <mat-icon aria-label="Menu">photo_camera</mat-icon>
+          <b>Sell Product</b>
+        </button>
+
+        <b class="nav-item"></b>
 
         <button mat-flat-button class="button nav-item">
-          <b>LOGIN</b>
-        </button>
-
-        <b class="nav-item">or</b>
-
-        <button mat-flat-button class="button nav-item">
-          <b>REGISTER</b>
+          <mat-icon aria-label="Menu">settings</mat-icon>
+          <b>Repair Phone.</b>
         </button>
       </div>
     </div>
   </mat-toolbar-row>
+</mat-toolbar>
+<mat-toolbar
+  style="background: transparent; height: 37px; padding: 0 52px; margin-top: 22px; border-bottom: 1px solid #cccccc;"
+  class="hidden"
+>
+  <button mat-flat-button class="catbutton nav-item">
+    <mat-icon aria-label="Menu">menu</mat-icon>
+    <b>Category</b>
+  </button>
+  <span class="example-spacer"></span>
+  <button mat-button>
+    Editor’s Pick
+  </button>
+  <button mat-button>
+    Top Earners
+  </button>
+  <button mat-button>
+    Popular Items
+  </button>
+  <button mat-button>
+    Popular Items
+  </button>
+  <button mat-button>
+    Week’s Offer
+  </button>
+  <button mat-button>
+    Blog
+  </button>
+  <span class="example-spacer"></span>
+  <button mat-button>
+    Free Shipping on NGN500 Deals
+  </button>
 </mat-toolbar>

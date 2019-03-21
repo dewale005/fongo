@@ -1,19 +1,22 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ComingsoonComponent } from './components/comingsoon/comingsoon.component';
-import { LandingPageComponent } from './page/landing-page/landing-page.component';
-import { DetailPageComponent } from './page/detail-page/detail-page.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { ComingsoonComponent } from "./components/comingsoon/comingsoon.component";
+import { LandingPageComponent } from "./page/landing-page/landing-page.component";
+import { DetailPageComponent } from "./page/detail-page/detail-page.component";
+import { SellphonesComponent } from "./page/sellphones/sellphones.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: ComingsoonComponent,
+    component: ComingsoonComponent
   },
   {
-    path: "home", component: LandingPageComponent,
+    path: "home",
+    component: LandingPageComponent
   },
   {
-    path: "phone", component: DetailPageComponent,
+    path: "phone",
+    component: SellphonesComponent
   }
 ];
 
@@ -21,4 +24,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

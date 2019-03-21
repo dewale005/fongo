@@ -11,6 +11,11 @@ import { NavbarComponent } from "./component/navbar/navbar.component";
 import { FooterComponent } from "./component/footer/footer.component";
 import { DetailPageComponent } from "./page/detail-page/detail-page.component";
 import { BarRatingModule } from "ngx-bar-rating";
+import { PhonesComponent } from './component/phones/phones.component';
+import { RelatedComponent } from './component/related/related.component';
+import { PromoComponent } from './component/promo/promo.component';
+import { SubcribeComponent } from './component/subcribe/subcribe.component';
+import { SellphonesComponent } from './page/sellphones/sellphones.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { BarRatingModule } from "ngx-bar-rating";
     LandingPageComponent,
     NavbarComponent,
     FooterComponent,
-    DetailPageComponent
+    DetailPageComponent,
+    PhonesComponent,
+    RelatedComponent,
+    PromoComponent,
+    SubcribeComponent,
+    SellphonesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+.box {
+  padding: 15px;
+  transition: 1s;
+  transition-duration: 1s;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 14px;
+  .button {
+    display: none;
+    transition: 2s;
+    transition-duration: 2s;
+  }
+  .img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.right {
+  float: right;
+}
+
+p {
+  margin: 0;
+}
+
+p.model {
+  color: #007bff;
+}
+
+.box:hover {
+  padding: 15px;
+  border: 2px solid #ffce00;
+  border-radius: 14px;
+  transition: 1s;
+  transition-duration: 1s;
+  .button {
+    display: inherit;
+    margin: -10px !important;
+    transition: 2s;
+    transition-duration: 2s;
+  }
+  .img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

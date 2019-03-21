@@ -11,3 +11,12 @@
   height: 18px;
   width: 18px;
 }
+
+.mat-tab-body-content {
+  height: 100%;
+  overflow: hidden !important;
+}
+
+.mat-elevation-z4 {
+  box-shadow: none;
+}
